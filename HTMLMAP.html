@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7bd413b2a7ba489eb3eb04db91a719f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7bd413b2a7ba489eb3eb04db91a719f0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7bd413b2a7ba489eb3eb04db91a719f0 = L.map(
+                "map_7bd413b2a7ba489eb3eb04db91a719f0",
+                {
+                    center: [22.305, 114.1805],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+
+            
+
+        
+    
+            var tile_layer_9b5ab6a766619468e31034bca86495a2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_9b5ab6a766619468e31034bca86495a2.addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+        
+    
+            var marker_cluster_f4c958718fedcf2212e05b45fca0ae76 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_cluster_5f1909799ef479f524184749a3137188 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_10bd176ed446b39cbaf6e25b91123266 = L.marker(
+                [22.302875, 114.17803055555557],
+                {}
+            ).addTo(marker_cluster_5f1909799ef479f524184749a3137188);
+        
+    
+            var icon_8393f7e52aa2941db3197fe9e593078a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_10bd176ed446b39cbaf6e25b91123266.setIcon(icon_8393f7e52aa2941db3197fe9e593078a);
+        
+    
+        var popup_e62054168e3d7eb57199aad7af0f169c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff0d61db16a9305f9ad6e2c6ba27ea14 = $(`<div id="html_ff0d61db16a9305f9ad6e2c6ba27ea14" style="width: 100.0%; height: 100.0%;">         <html>             <head><meta charset="utf-8"></head>             <body>                 <div style="width:300px;">                      <img src='images/Transportation/BusStation/Bus_Station_1.jpg' alt='Image' width='280px' style="height:auto;">                     <p>File Name: Bus_Station_1.jpg <br/> Latitude: 22.302875 <br/> Longitude: 114.17803055555557 <br/> Time: 2024:11:05 13:35:56</p>                 </div>             </body>         </html>     </div>`)[0];
+                popup_e62054168e3d7eb57199aad7af0f169c.setContent(html_ff0d61db16a9305f9ad6e2c6ba27ea14);
+            
+        
+
+        marker_10bd176ed446b39cbaf6e25b91123266.bindPopup(popup_e62054168e3d7eb57199aad7af0f169c)
+        ;
+
+        
+    
+    
+            marker_10bd176ed446b39cbaf6e25b91123266.bindTooltip(
+                `<div>
+                     Bus_Station_1.jpg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58841e734a23c795a66e8ee2a24c8d60 = L.marker(
+                [22.302805555555555, 114.17791666666668],
+                {}
+            ).addTo(marker_cluster_5f1909799ef479f524184749a3137188);
+        
+    
+            var icon_36842e0931f451b6336da432405586ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_58841e734a23c795a66e8ee2a24c8d60.setIcon(icon_36842e0931f451b6336da432405586ee);
+        
+    
+        var popup_6e6888248c66383d92f42204c0af6fac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df792a54df29bc7519ff71d5fef49832 = $(`<div id="html_df792a54df29bc7519ff71d5fef49832" style="width: 100.0%; height: 100.0%;">         <html>             <head><meta charset="utf-8"></head>             <body>                 <div style="width:300px;">                      <img src='images/Transportation/BusStation/Bus_Station_2.jpg' alt='Image' width='280px' style="height:auto;">                     <p>File Name: Bus_Station_2.jpg <br/> Latitude: 22.302805555555555 <br/> Longitude: 114.17791666666668 <br/> Time: 2024:11:05 13:36:20</p>                 </div>             </body>         </html>     </div>`)[0];
+                popup_6e6888248c66383d92f42204c0af6fac.setContent(html_df792a54df29bc7519ff71d5fef49832);
+            
+        
+
+        marker_58841e734a23c795a66e8ee2a24c8d60.bindPopup(popup_6e6888248c66383d92f42204c0af6fac)
+        ;
+
+        
+    
+    
+            marker_58841e734a23c795a66e8ee2a24c8d60.bindTooltip(
+                `<div>
+                     Bus_Station_2.jpg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_5f1909799ef479f524184749a3137188.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            var marker_cluster_e5b7e9a69c1bd30724a3f55a4dc03b79 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_8d2b1771c49aed3f04dbbe3b5f9de389 = L.marker(
+                [22.30343611111111, 114.18030555555556],
+                {}
+            ).addTo(marker_cluster_e5b7e9a69c1bd30724a3f55a4dc03b79);
+        
+    
+            var icon_e83737c72f0dbf90f00a00b095079c1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8d2b1771c49aed3f04dbbe3b5f9de389.setIcon(icon_e83737c72f0dbf90f00a00b095079c1d);
+        
+    
+        var popup_4f99afee0d8d6c3cd00e4bdf62a9ddfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87e51137a07cc2a4951db7756abbd2e1 = $(`<div id="html_87e51137a07cc2a4951db7756abbd2e1" style="width: 100.0%; height: 100.0%;">         <html>             <head><meta charset="utf-8"></head>             <body>                 <div style="width:300px;">                      <img src='images/Transportation/CrossHarbourTunnelBBI/Cross_Harbour_Tunnel_BBI_1.jpg' alt='Image' width='280px' style="height:auto;">                     <p>File Name: Cross_Harbour_Tunnel_BBI_1.jpg <br/> Latitude: 22.30343611111111 <br/> Longitude: 114.18030555555556 <br/> Time: 2024:11:05 13:56:43</p>                 </div>             </body>         </html>     </div>`)[0];
+                popup_4f99afee0d8d6c3cd00e4bdf62a9ddfa.setContent(html_87e51137a07cc2a4951db7756abbd2e1);
+            
+        
+
+        marker_8d2b1771c49aed3f04dbbe3b5f9de389.bindPopup(popup_4f99afee0d8d6c3cd00e4bdf62a9ddfa)
+        ;
+
+        
+    
+    
+            marker_8d2b1771c49aed3f04dbbe3b5f9de389.bindTooltip(
+                `<div>
+                     Cross_Harbour_Tunnel_BBI_1.jpg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a22f6975f944945c486c2620707de74 = L.marker(
+                [22.302947222222222, 114.18051111111112],
+                {}
+            ).addTo(marker_cluster_e5b7e9a69c1bd30724a3f55a4dc03b79);
+        
+    
+            var icon_d5439a2e56c6a2ea8fe4405fea732ba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7a22f6975f944945c486c2620707de74.setIcon(icon_d5439a2e56c6a2ea8fe4405fea732ba9);
+        
+    
+        var popup_d4359079671bd31caf5c48cb83c58051 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccd26b559a6bf06c4a5d3140d7889176 = $(`<div id="html_ccd26b559a6bf06c4a5d3140d7889176" style="width: 100.0%; height: 100.0%;">         <html>             <head><meta charset="utf-8"></head>             <body>                 <div style="width:300px;">                      <img src='images/Transportation/CrossHarbourTunnelBBI/Cross_Harbour_Tunnel_BBI_2.jpg' alt='Image' width='280px' style="height:auto;">                     <p>File Name: Cross_Harbour_Tunnel_BBI_2.jpg <br/> Latitude: 22.302947222222222 <br/> Longitude: 114.18051111111112 <br/> Time: 2024:11:05 13:57:48</p>                 </div>             </body>         </html>     </div>`)[0];
+                popup_d4359079671bd31caf5c48cb83c58051.setContent(html_ccd26b559a6bf06c4a5d3140d7889176);
+            
+        
+
+        marker_7a22f6975f944945c486c2620707de74.bindPopup(popup_d4359079671bd31caf5c48cb83c58051)
+        ;
+
+        
+    
+    
+            marker_7a22f6975f944945c486c2620707de74.bindTooltip(
+                `<div>
+                     Cross_Harbour_Tunnel_BBI_2.jpg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80375094cfded1ed45add92486523499 = L.marker(
+                [22.303283333333333, 114.18035],
+                {}
+            ).addTo(marker_cluster_e5b7e9a69c1bd30724a3f55a4dc03b79);
+        
+    
+            var icon_7aaabbbcbb283fbc0e5567c3ecc08eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_80375094cfded1ed45add92486523499.setIcon(icon_7aaabbbcbb283fbc0e5567c3ecc08eea);
+        
+    
+        var popup_ddbc97d0e540921999e2761a6c57f49d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1c05966677f7e506298a05f7a83872c = $(`<div id="html_e1c05966677f7e506298a05f7a83872c" style="width: 100.0%; height: 100.0%;">         <html>             <head><meta charset="utf-8"></head>             <body>                 <div style="width:300px;">                      <img src='images/Transportation/CrossHarbourTunnelBBI/Cross_Harbour_Tunnel_BBI_3.jpg' alt='Image' width='280px' style="height:auto;">                     <p>File Name: Cross_Harbour_Tunnel_BBI_3.jpg <br/> Latitude: 22.303283333333333 <br/> Longitude: 114.18035 <br/> Time: 2024:11:05 13:57:56</p>                 </div>             </body>         </html>     </div>`)[0];
+                popup_ddbc97d0e540921999e2761a6c57f49d.setContent(html_e1c05966677f7e506298a05f7a83872c);
+            
+        
+
+        marker_80375094cfded1ed45add92486523499.bindPopup(popup_ddbc97d0e540921999e2761a6c57f49d)
+        ;
+
+        
+    
+    
+            marker_80375094cfded1ed45add92486523499.bindTooltip(
+                `<div>
+                     Cross_Harbour_Tunnel_BBI_3.jpg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_e5b7e9a69c1bd30724a3f55a4dc03b79.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            var marker_cluster_1c4e0d9a5434ea536e27bd6f0fe50273 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_d8ed7495dbda8282298930e0db24493e = L.marker(
+                [22.303608333333333, 114.18049722222224],
+                {}
+            ).addTo(marker_cluster_1c4e0d9a5434ea536e27bd6f0fe50273);
+        
+    
+            var icon_1a7559aca100897660532e482de092fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d8ed7495dbda8282298930e0db24493e.setIcon(icon_1a7559aca100897660532e482de092fb);
+        
+    
+        var popup_05d72a4f957d2ed543a8c2184fcbf419 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_217e947e2a40775d0eaf99e1ded0525c = $(`<div id="html_217e947e2a40775d0eaf99e1ded0525c" style="width: 100.0%; height: 100.0%;">         <html>             <head><meta charset="utf-8"></head>             <body>                 <div style="width:300px;">                      <img src='images/Transportation/HungHomStation/Hung_Hom_Station_1.jpg' alt='Image' width='280px' style="height:auto;">                     <p>File Name: Hung_Hom_Station_1.jpg <br/> Latitude: 22.303608333333333 <br/> Longitude: 114.18049722222224 <br/> Time: 2024:11:05 13:59:34</p>                 </div>             </body>         </html>     </div>`)[0];
+                popup_05d72a4f957d2ed543a8c2184fcbf419.setContent(html_217e947e2a40775d0eaf99e1ded0525c);
+            
+        
+
+        marker_d8ed7495dbda8282298930e0db24493e.bindPopup(popup_05d72a4f957d2ed543a8c2184fcbf419)
+        ;
+
+        
+    
+    
+            marker_d8ed7495dbda8282298930e0db24493e.bindTooltip(
+                `<div>
+                     Hung_Hom_Station_1.jpg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_424a5693b6f14788b45fdf3893d2697d = L.marker(
+                [22.30367222222222, 114.18059444444444],
+                {}
+            ).addTo(marker_cluster_1c4e0d9a5434ea536e27bd6f0fe50273);
+        
+    
+            var icon_bc78ef3260b86203d3806f8636ff5579 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_424a5693b6f14788b45fdf3893d2697d.setIcon(icon_bc78ef3260b86203d3806f8636ff5579);
+        
+    
+        var popup_a976d4f770586ee7a78d719ffb0f06a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06792767613a74a4d51bcb6c78435c10 = $(`<div id="html_06792767613a74a4d51bcb6c78435c10" style="width: 100.0%; height: 100.0%;">         <html>             <head><meta charset="utf-8"></head>             <body>                 <div style="width:300px;">                      <img src='images/Transportation/HungHomStation/Hung_Hom_Station_2.jpg' alt='Image' width='280px' style="height:auto;">                     <p>File Name: Hung_Hom_Station_2.jpg <br/> Latitude: 22.30367222222222 <br/> Longitude: 114.18059444444444 <br/> Time: 2024:11:05 14:00:03</p>                 </div>             </body>         </html>     </div>`)[0];
+                popup_a976d4f770586ee7a78d719ffb0f06a4.setContent(html_06792767613a74a4d51bcb6c78435c10);
+            
+        
+
+        marker_424a5693b6f14788b45fdf3893d2697d.bindPopup(popup_a976d4f770586ee7a78d719ffb0f06a4)
+        ;
+
+        
+    
+    
+            marker_424a5693b6f14788b45fdf3893d2697d.bindTooltip(
+                `<div>
+                     Hung_Hom_Station_2.jpg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_1c4e0d9a5434ea536e27bd6f0fe50273.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            marker_cluster_f4c958718fedcf2212e05b45fca0ae76.addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+        
+    
+            var layer_control_4f2a5ab485b5e97ccfbd5c06440e5b90_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_9b5ab6a766619468e31034bca86495a2,
+                },
+                overlays :  {
+                    "Transportation" : marker_cluster_f4c958718fedcf2212e05b45fca0ae76,
+                },
+            };
+            let layer_control_4f2a5ab485b5e97ccfbd5c06440e5b90 = L.control.layers(
+                layer_control_4f2a5ab485b5e97ccfbd5c06440e5b90_layers.base_layers,
+                layer_control_4f2a5ab485b5e97ccfbd5c06440e5b90_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+
+        
+    
+            tile_layer_9b5ab6a766619468e31034bca86495a2.addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+        
+    
+            marker_cluster_5f1909799ef479f524184749a3137188.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            marker_cluster_e5b7e9a69c1bd30724a3f55a4dc03b79.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            marker_cluster_1c4e0d9a5434ea536e27bd6f0fe50273.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            marker_cluster_f4c958718fedcf2212e05b45fca0ae76.addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+        
+    
+            tile_layer_9b5ab6a766619468e31034bca86495a2.addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+        
+    
+            marker_cluster_5f1909799ef479f524184749a3137188.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            marker_cluster_e5b7e9a69c1bd30724a3f55a4dc03b79.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            marker_cluster_1c4e0d9a5434ea536e27bd6f0fe50273.addTo(marker_cluster_f4c958718fedcf2212e05b45fca0ae76);
+        
+    
+            marker_cluster_f4c958718fedcf2212e05b45fca0ae76.addTo(map_7bd413b2a7ba489eb3eb04db91a719f0);
+        
+</script>
+</html>
